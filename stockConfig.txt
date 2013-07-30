@@ -1,0 +1,25 @@
+{
+  :mail-server
+  {
+    :host "smtp.domain.com",
+    :port 587,
+    :user "user@domain.com",
+    :pass "********",
+    :tls :yes
+  },
+
+  :mail-send
+  {
+    :from "user@domain.com",
+    :to ["user@domain.com"],
+    :subject "MSFT stock alert {price}",
+    :body "<h2>time to buy/sell?</h2>"
+  },
+
+  :stock
+  {
+    :symbol "MSFT",
+    :low "31",
+    :high "35"
+  }
+}
